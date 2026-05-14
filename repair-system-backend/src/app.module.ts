@@ -27,7 +27,7 @@ import { WechatModule } from './wechat/wechat.module';
     // 环境变量配置
     ConfigModule.forRoot({
       isGlobal: true,
-      envFilePath: '.env',
+      envFilePath: '.env.example',
     }),
     TypeOrmModule.forRootAsync({
       useFactory: (config: ConfigService) => ({
